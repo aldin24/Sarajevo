@@ -1,17 +1,38 @@
 
+/*      light colors         */
+/*           Font Smoothing      */
 body {
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  color: #8d97ad;
+  font-weight: 300; }
 
-    background-color: aqua;
+html {
+  position: relative;
+  min-height: 100%;
+  background: #ffffff; }
+
+a:hover,
+a:focus {
+  text-decoration: none; }
+
+a.link {
+  color: #3e4555; }
+  a.link:hover, a.link:focus {
+    color: #316ce8; }
+
+a.white-link {
+  color: #ffffff; }
+  a.white-link:hover, a.white-link:focus {
+    color: #263238; }
+
+.carousel-item {
+height: 400px; /* This is your slider height */
+}
+.carousel {
+width:100%;
+margin:0 auto; /* center your carousel if other than 100% */
 }
 
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
-
-.textoverimage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
