@@ -1,0 +1,53 @@
+/*      light colors         */
+
+/*           Font Smoothing      */
+
+body {
+    background: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    color: #8d97ad;
+    font-weight: 300;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background: #ffffff;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a.link {
+    color: #3e4555;
+}
+
+a.link:hover,
+a.link:focus {
+    color: #316ce8;
+}
+
+a.white-link {
+    color: #ffffff;
+}
+
+a.white-link:hover,
+a.white-link:focus {
+    color: #263238;
+}
+
+.carousel-item {
+    height: 400px;
+
+}
+
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
