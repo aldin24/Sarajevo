@@ -23,7 +23,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     // attractions page =================================
         .state('explore.attractions', {
             url: '/attractions',
-            templateUrl: 'pages/atttractions.html'
+            templateUrl: 'pages/attractions.html'
         })
 
         // events page =================================
