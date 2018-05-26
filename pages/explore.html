@@ -1,119 +1,122 @@
+<!-- Header  -->
+<!-- ============================================================== -->
+<div class="static-slider10 img-responsive" style="background-image:url(img/attractions/Sarajevo-rooftops-with-Catholic-and-Orthodox-cathedrals_Charles-Bowman_getty_cs.jpg); height: 600px;">
 
+</div>
+<!-- ============================================================== -->
+<!-- Header  -->
 
+<br><br><br>
 
-    <!-- Header  -->
-    <!-- ============================================================== -->
-    <div class="static-slider10 img-responsive" style="background-image:url(img/attractions/Sarajevo-rooftops-with-Catholic-and-Orthodox-cathedrals_Charles-Bowman_getty_cs.jpg); height: 600px;">
+<!-- ============================================================== -->
+<!-- Browse Attractions  -->
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 text-center">
+                <h1 class="title">Browse Attractions</h1><br><br>
+            </div>
+            <div class="row m-t-40">
+                <style>
+                    .post {
 
-    </div>
-    <!-- ============================================================== -->
-    <!-- Header  -->
+                        height: 300px;
+                        position: relative;
+                        cursor: pointer;
+                    }
 
-    <br><br><br>
+                    .post:hover .post-s {
+                        width: 262px;
+                    }
 
-     <!-- ============================================================== -->
-    <!-- Browse Attractions  -->
-    <section>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-7 text-center">
-                    <h1 class="title">Browse Attractions</h1><br><br>
+                    .post img {
+                        display: block;
+
+                        height: 300px;
+                    }
+
+                    .post-s {
+                        width: 0px;
+                        height: 300px;
+                        background: rgba(0, 0, 0, 0.71);
+                        position: absolute;
+                        top: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        transition: 0.7s ease;
+                    }
+
+                    .post-s h2 {
+                        color: white;
+                        font-size: 50px;
+
+                        padding: 10px 30px;
+                    }
+
+                </style>
+                <div class="col-md-3">
+                    <div class="card card-shadow post" data-aos="flip-left" data-aos-duration="1200">
+                        <div class="post">
+                            <img class="card-img-top img-fluid" src="img/attractions.png" style="height: 300px;" />
+                            <div class="post-s">
+                                <a ui-sref="explore.attractions">
+                                    <h2>Attractions</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row m-t-40">
-                    <style>
-                        .post {
-
-                            height: 300px;
-                            position: relative;
-                            cursor: pointer;
-                        }
-
-                        .post:hover .post-s {
-                            width: 262px;
-                        }
-
-                        .post img {
-                            display: block;
-
-                            height: 300px;
-                        }
-
-                        .post-s {
-                            width: 0px;
-                            height: 300px;
-                            background: rgba(0, 0, 0, 0.71);
-                            position: absolute;
-                            top: 0;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            overflow: hidden;
-                            transition: 0.7s ease;
-                        }
-
-                        .post-s h2 {
-                            color: white;
-                            font-size: 50px;
-
-                            padding: 10px 30px;
-                        }
-                    </style>
-                    <div class="col-md-3">
-                        <div class="card card-shadow post" data-aos="flip-left" data-aos-duration="1200">
-                            <div class="post">
-                              <img class="card-img-top img-fluid" src="img/attractions.png" style="height: 300px;" />
-                                <div class="post-s">
-                                    <a ui-sref="explore.attractions">  <h2>Attractions</h2></a>
-                                </div>
+                <div class="col-md-3">
+                    <div class="card card-shadow post" data-aos="flip-left" data-aos-duration="1200">
+                        <div class="post">
+                            <img class="card-img-top img-fluid" src="img/events.jpg" style="height: 300px;" />
+                            <div class="post-s">
+                                <a ui-sref="explore.events">
+                                    <h2>Events</h2>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card card-shadow post" data-aos="flip-left" data-aos-duration="1200">
-                            <div class="post">
-                                <img class="card-img-top img-fluid" src="img/events.jpg" style="height: 300px;" />
-                                <div class="post-s">
-                                   <a ui-sref="explore.events">  <h2>Events</h2></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card card-shadow post" data-aos="flip-left" data-aos-duration="1200">
-                            <div class="post">
-                                <img class="card-img-top img-fluid " src="img/dining.jpg" style="height: 300px;" />
-                                <div class="post-s">
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-shadow post" data-aos="flip-left" data-aos-duration="1200">
+                        <div class="post">
+                            <img class="card-img-top img-fluid " src="img/dining.jpg" style="height: 300px;" />
+                            <div class="post-s">
+                                <a ui-sref="explore.dinning">
                                     <h2>Dining</h2>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card card-shadow post" data-aos="flip-left" data-aos-duration="1200">
-                            <div class="post">
-                                <img class="card-img-top img-fluid" src="img/nightlife.jpg" style="height: 300px;" />
-                                <div class="post-s">
-                                    <h2>Nightlife</h2>
-                                </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-shadow post" data-aos="flip-left" data-aos-duration="1200">
+                        <div class="post">
+                            <img class="card-img-top img-fluid" src="img/nightlife.jpg" style="height: 300px;" />
+                            <div class="post-s">
+                                <a ui-sref="explore.nightlife"><h2>Nightlife</h2></a>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
+
         </div>
-    </section>
-    <!-- ============================================================== -->
-    <!-- Browse Attractions  -->
+    </div>
+</section>
+<!-- ============================================================== -->
+<!-- Browse Attractions  -->
 
 
 
-        <br><br>
+<br><br>
 
 
 
 
 
-        <div ui-view></div>
-
+<div ui-view></div>

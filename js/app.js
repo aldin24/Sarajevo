@@ -30,8 +30,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('explore.events', {
             url: '/events',
             templateUrl: 'pages/events.html'
-        });
+        })
 
+        // dinning page =================================
+        .state('explore.dinning', {
+            url: '/dinning',
+            templateUrl: 'pages/dinning.html'
+        })
+
+           // nightlife page =================================
+        .state('explore.nightlife', {
+            url: '/nightlife',
+            templateUrl: 'pages/nightlife.html'
+        });
 });
 
 
