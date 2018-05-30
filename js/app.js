@@ -1,8 +1,6 @@
-
-
 var app = angular.module('sarajevo', ['ui.router']);
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/home');
 
@@ -14,13 +12,34 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'pages/home.html'
         })
 
+        // stay page =================================
+        .state('stay', {
+            url: '/stay',
+            templateUrl: 'pages/stay.html'
+        })
+
+        .state('stay.luxury', {
+            url: '/luxury',
+            templateUrl: 'pages/stay/luxury.html'
+        })
+
+        .state('stay.hip', {
+            url: '/hip',
+            templateUrl: 'pages/stay/hip.html'
+        })
+
+        .state('stay.budget', {
+            url: '/budget',
+            templateUrl: 'pages/stay/budget.html'
+        })
+
         // explore page =================================
         .state('explore', {
             url: '/explore',
             templateUrl: 'pages/explore.html'
         })
 
-    // attractions page =================================
+        // attractions page =================================
         .state('explore.attractions', {
             url: '/attractions',
             templateUrl: 'pages/attractions.html'
@@ -38,7 +57,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'pages/dinning.html'
         })
 
-           // nightlife page =================================
+        // nightlife page =================================
         .state('explore.nightlife', {
             url: '/nightlife',
             templateUrl: 'pages/nightlife.html'
@@ -52,6 +71,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 app.controller('MainCtrl', [
 '$scope',
-function($scope){
-$scope.name = 'Aldin';
+function ($scope) {
+        $scope.name = 'Aldin';
 }]);
