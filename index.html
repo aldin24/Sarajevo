@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/custom.css">
+
     <link rel="stylesheet" href="css/animate.css">
 
 
@@ -21,14 +22,12 @@
 
 </head>
 
-<body ng-controller="MainCtrl" >
-
-
+<body ng-controller="MainCtrl">
 
     <!-- Navbar -->
     <!-- ============================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" ui-sref="home">Sarajevo</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a ui-sref="home" class="navbar-brand"><img src="img/logo.png" alt="" class="img-fluid"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,17 +53,44 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Register</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
+                    <a href="#" data-toggle="modal" data-target="#login" class="btn btn-danger navbar-btn ml-0 ml-lg-3">Login </a>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Login Modal-->
+    <div id="login" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-lg">
+        <div role="document" class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body p-4 p-lg-5">
+                    <form action="#" class="login-form text-left">
+                        <div class="form-group mb-4">
+                            <label>Email address</label>
+                            <input type="email" name="email" placeholder="name@company.com" class="form-control">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>Password</label>
+                            <input type="password" name="password" placeholder="Min 8 characters" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Login" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- ============================================================== -->
     <!-- End NavBar  -->
 
-     <div id="main">
+    <div id="main">
 
 
         <div ui-view></div>
@@ -220,8 +246,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/custom.min.js"></script>
+  <script src="js/front.js"></script>
 
 
 
