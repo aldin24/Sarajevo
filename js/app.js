@@ -1,3 +1,4 @@
+/*global angular */
 var app = angular.module('sarajevo', ['ui.router']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -10,6 +11,24 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         .state('home', {
             url: '/home',
             templateUrl: 'pages/home.html'
+        })
+
+        .state('home.muzeji', {
+            url: '/mousems',
+            templateUrl: 'pages/muzeji.html'
+        })
+
+        .state('home.attractions', {
+            url: '/attractions',
+            templateUrl: 'pages/attractions.html'
+        })
+        .state('home.nightlife', {
+            url: '/nightlife',
+            templateUrl: 'pages/nightlife.html'
+        })
+        .state('home.dinning', {
+            url: '/dinning',
+            templateUrl: 'pages/dinning.html'
         })
 
         // stay page =================================
@@ -69,11 +88,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
 
 
-app.controller('MainCtrl', [
-'$scope',
-function ($scope) {
+app.controller('MainCtrl', function ($scope) {
+    "use strict";
         $scope.name = 'Aldin';
-}]);
-
-
-
+});
