@@ -41,7 +41,27 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'pages/close.html'
         })
 
-        // stay page =================================
+         .state('spring', {
+            url: '/spring',
+            templateUrl: 'pages/seasons/spring.html'
+        })
+
+        .state('summer', {
+            url: '/summer',
+            templateUrl: 'pages/seasons/summer.html'
+        })
+
+           .state('winter', {
+            url: '/winter',
+            templateUrl: 'pages/seasons/winter.html'
+        })
+
+           .state('autumn', {
+            url: '/autumn',
+            templateUrl: 'pages/seasons/autumn.html'
+        })
+
+
         .state('stay', {
             url: '/stay',
             templateUrl: 'pages/stay.html'
