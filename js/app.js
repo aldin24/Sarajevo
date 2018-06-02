@@ -31,6 +31,16 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'pages/dinning.html'
         })
 
+          .state('home.shopping', {
+            url: '/shopping',
+            templateUrl: 'pages/shopping.html'
+        })
+
+        .state('home.close', {
+            url: '/home',
+            templateUrl: 'pages/close.html'
+        })
+
         // stay page =================================
         .state('stay', {
             url: '/stay',
@@ -86,9 +96,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
 
 
+app.controller('MainCtrl', function ($scope){
 
 
-app.controller('MainCtrl', function ($scope) {
-    "use strict";
-        $scope.name = 'Aldin';
 });
