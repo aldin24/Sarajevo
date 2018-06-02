@@ -68,6 +68,21 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'pages/explore.html'
         })
 
+          .state('explore.automotive', {
+            url: '/automotive',
+            templateUrl: 'pages/explore/automotive.html'
+        })
+
+           .state('explore.hotel', {
+            url: '/hotel',
+            templateUrl: 'pages/explore/hotel.html'
+        })
+
+            .state('explore.spa', {
+            url: '/spa',
+            templateUrl: 'pages/explore/spa.html'
+        })
+
         // attractions page =================================
         .state('explore.attractions', {
             url: '/attractions',
@@ -86,6 +101,23 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'pages/dinning.html'
         })
 
+          .state('explore.shopping', {
+            url: '/shopping',
+            templateUrl: 'pages/shopping.html'
+        })
+
+           .state('explore.coffee', {
+            url: '/coffee',
+            templateUrl: 'pages/explore/coffee.html'
+        })
+
+           .state('about', {
+            url: '/about',
+            templateUrl: 'pages/about.html'
+        })
+
+
+
         // nightlife page =================================
         .state('explore.nightlife', {
             url: '/nightlife',
@@ -98,5 +130,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
 app.controller('MainCtrl', function ($scope){
 
+    $scope.name = "aldin";
 
 });
