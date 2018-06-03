@@ -82,6 +82,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'pages/stay/budget.html'
         })
 
+          .state('register', {
+            url: '/register',
+            templateUrl: 'pages/register.html'
+        })
+
         // explore page =================================
         .state('explore', {
             url: '/explore',
